@@ -1,24 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<html lang="en">
+<head id="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Minha Lista</title>
+    <link rel="stylesheet" href="./CSS/output.css">
+    <title>Alípio Gomes</title>
 </head>
-<body>
-    <main>
-        <h1>Lista de Tarefas</h1>
-        <p>
-            <input type="text" class="novaTarefa">
-            <button class="addTarefa">Adicionar</button>
-        </p>
-        <ul class="tarefas"></ul>
-    </main>
-
-
-
+<body class="flex flex-col">
+    <main id="index">
+        <!--    CONTEÚDO AQUI   -->
+    </main>    
+    <section class="flex justify-center items-center w-screen h-32 bg-black text-white">
+            <div class="w-5/6">
+                <h1 class="text-3xl">Contatos</h1>
+                <div class="w-5/12 flex items-center justify-between">
+                    <a href="mailto:alipiotec@gmail.com" id="email" target="_blamk">alipioetec@gmail.com</a>
+                    <a href="https://github.com/AlipioGSF/" target="_blank"><div id="github" class="linksImg"></div></a>
+                    <a href="https://www.linkedin.com/in/alipio-gomes-sf/" target="_blank"><div id="linkedin" class="linksImg"></div></a>
+                </div>
+            </div>
+    </section>
+    <nav id="navBar" class=" fixed flex w-screen h-14 bg-white items-center justify-center shadow-md">
+        <ul id="navegador" class="flex w-3/6 justify-around text-2xl font-extralight">
+            <li><a>Início</a></li> 
+            <li><a>Sobre mim</a></li>
+            <li><a>Projetos</a></li>
+            <li><a>Habilidades</a></li>
+        </ul>
+        
+        <button id="light" class="fixed h-14 w-14 right-5 mt-1 rounded-full"></button>
+        <button id="menu"></button>
+    </nav>
     <script src="JS/indexjs.js"></script>
+    <script src="JS/menu.js"></script>
 </body>
 </html>

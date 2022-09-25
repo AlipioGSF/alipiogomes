@@ -1,80 +1,89 @@
-const novaTarefa = document.querySelector(".novaTarefa");
-const addTarefa = document.querySelector(".addTarefa");
-const tarefas = document.querySelector(".tarefas");
+const body = document.querySelector('body');
+const main = document.querySelector('main');
+const horario = new Date();
+let paginaAtual;
+let dark;
 
-
-
-function criaLi(){
-    const li = document.createElement('li');
-    return li;
+function controlpage(page){
+    pages = ['inicio','sobremim', 'projetos', 'habilidades'];
+    pages.forEach(e => {
+        if(page === e) paginaAtual = page; 
+    });
 }
 
-novaTarefa.addEventListener('keypress', function(e){
-    if(e.keyCode === 13){
-        if(!novaTarefa.value) return;
-        criaTarefa(novaTarefa.value);
-    }
-});
-
-function criaApagar(li) {
-    li.innerText += ' ';
-    const btnApagar = document.createElement('button');
-    btnApagar.innerText = 'Apagar';
-    btnApagar.setAttribute('class','apagar');
-    btnApagar.setAttribute('title','Apagar esta tarefa');
-    li.appendChild(btnApagar);
-}
-
-
-document.addEventListener('click', function (e){
-    const el = e.target;
-    if(el.classList.contains('apagar')){
-        el.parentElement.remove();
-        salvaTarefas();
-    }
-});
-
-function limpaInput(){
-    novaTarefa.value = '';
-    novaTarefa.focus();
-}
-
-function criaTarefa(nomeDaTarefa){
-    const li = criaLi();
-    li.innerHTML = nomeDaTarefa;
-    tarefas.appendChild(li);
-    limpaInput();
-    criaApagar(li);
-    salvaTarefas();
-}
-
-
-addTarefa.addEventListener('click', function (){
-    if(!novaTarefa.value) return;
-    criaTarefa(novaTarefa.value);
-});
-
-
-function salvaTarefas(){
-    const liTarefas = tarefas.querySelectorAll('li');
-    const listaDeTarefas = [];
-    for(let tarefa of liTarefas){
-        let tarefaTexto = tarefa.innerText.replace('Apagar', '').trim();
-        listaDeTarefas.push(tarefaTexto);
-    }
-
-    const tarefasJSON = JSON.stringify(listaDeTarefas);
-    localStorage.setItem('tarefas', tarefasJSON);
-}
-
-function adicionaTarefasSalvas(){
-    const tarefas = localStorage.getItem('tarefas')
-    const listaDeTarefas = JSON.parse(tarefas);
+document.addEventListener('click', e =>{
+    const elemento = e.target;
+    page = elemento.innerText.toLowerCase();
+    if(page === 'início'){
+        page = 'inicio';
+        require('../HTML/inicio.html');
+    } 
+    if(page === 'sobre mim'){
+        page = 'sobremim';
+        require('../HTML/sobremim.html');
+    } 
+    if(page === 'projetos') require('../HTML/projetos.html');
+    if(page === 'habilidades') require('../HTML/skills.html');
+    controlpage(page);
     
-    for(let tarefa of listaDeTarefas){
-        criaTarefa(tarefa);
-    }    
+    if(elemento.getAttribute('id') === 'light'){
+        if(!elemento.classList.contains('light')){
+            elemento.classList.toggle('light');
+           dark = '';
+        }else{
+            elemento.classList.toggle('light');
+            dark = 'dark';
+        }
+    }
+    body.style.backgroundImage = `url(../imagens/fundo${paginaAtual}${dark}.png)`
+    
+    if(elemento.classList.contains('mostrarProjs')){
+        const maisProjetos = document.querySelector('.maisProjetos');
+        if(elemento.innerText === 'ver mais'){
+            maisProjetos.style.display = 'flex'
+            elemento.innerText = 'ver menos'
+        }else{
+            elemento.innerText = 'ver mais'
+            maisProjetos.style.display = 'none'
+        }
+    }
+})
+
+document.addEventListener('mouseover', e => {
+    const elemento = e.target;
+    const descricao = document.querySelector('#descricaoSkill')
+    if(elemento.tagName.toLowerCase() === 'li'){
+        if(elemento.getAttribute('id').toLowerCase() === 'html'){
+            descricao.innerHTML = 'O HTML é uma linguagem de marcação. Estas linguagens são constituídas de códigos que delimitam conteúdos específicos, segundo uma sintaxe própria. O HTML tem códigos para criar paginas na web. Estes códigos que definem o tipo de letra, qual o tamanho, cor, espaçamento, e vários outros aspectos do site.';
+        } 
+    }else{
+        descricao.innerHTML = 'Passe o mouse';
+    }
+});
+
+
+function require(link){
+    fetch(link)
+    .then(response => response.text())
+    .then(response => index.innerHTML = response)
+    .catch(e => console.log(e))
+}
+
+function start(){
+    const hora = horario.getHours();
+    paginaAtual = 'inicio'
+    controlpage();
+    main.innerHTML = require('../HTML/inicio.html');
+
+    if(hora >= 5 && hora <= 17){
+        dark = ''
+        body.style.backgroundImage = 'url(../imagens/fundoinicio.png)'
+    }else{
+        dark = 'dark'
+        body.style.backgroundImage = 'url(../imagens/fundoiniciodark.png)'
+    }
 
 }
 
-adicionaTarefasSalvas();
+
+start();

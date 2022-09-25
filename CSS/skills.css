@@ -1,0 +1,77 @@
+.espacoSkills{
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.tituloSkills{
+    font-size: 3.6rem;
+}
+.localSkills{
+    display: flex;
+    justify-content: space-between;
+}
+.localSkills ul{
+    width:50%;
+    height: max-content;
+    max-height: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 2rem;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: auto;
+}
+
+.localSkills ul{
+    appearance: none;
+}
+ul::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+.localSkills ul li{
+    min-width:6rem;
+    min-height: 6rem;
+    background-position: center;
+    background-size: contain;   
+    background-repeat: no-repeat;
+}
+.localSkills ul li:nth-child(1){
+    background-image: url(../imagens/HTMLlogo.png);
+}
+.localSkills ul li:nth-child(2){
+    background-image: url(../imagens/CSSlogo.png);
+}
+.localSkills ul li:nth-child(3){
+    background-image: url(../imagens/JSlogo.png);
+}
+.localSkills ul li:nth-child(4){
+    background-image: url(../imagens/JavaIcon.png);
+}
+.localSkills ul li:nth-child(5){
+    background-image: url(../imagens/JavaIcon.png);
+}
+.localSkills ul li:nth-child(6){
+    background-image: url(../imagens/JavaIcon.png);
+}
+.localSkills ul li:nth-child(7){
+    background-image: url(../imagens/JavaIcon.png);
+}
+.localSkills ul li:nth-child(8){
+    background-image: url(../imagens/JavaIcon.png);
+}
+.localSkills ul li:nth-child(9){
+    background-image: url(../imagens/JavaIcon.png);
+}
+.localSkills ul li:nth-child(10){
+    background-image: url(../imagens/JavaIcon.png);
+}
+
+#descricaoSkill{
+    width: 50%;
+    height: 22rem;
+    background-color: rgba(178, 34, 34, 0.267);
+    text-align: center;
+}
