@@ -1,75 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @import url(./projetos.css);
 @import url(./inicio.css);
-@import url(./skills.css);
+@import url(./habilidades.css);
 
 @font-face {
-  font-family: Sansation;
+  font-family: sansation;
   src: url(Sansation-Regular.ttf);
 }
 
-/*
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-  font-family: 'Inter', sans-serif;
-*/
-
 *{
-  font-family: Sansation;
+  font-family: sansation;
 }
 
 body {
-  @apply flex flex-col items-center w-screen overflow-x-hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: -5em;
+  overflow-x: hidden;
 }
 
 main{
   display: flex;
-  color: white;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  width:100%;
-  max-width: 720px;
+  width: 70vw;
   text-shadow: 1px 1px 1px rgba(70, 70, 70, 0.425);
   background-position: center;
 }
 
-li{
-  @apply flex flex-col;
+nav{
+  box-shadow: 0px 0px 5px black;
 }
 
-nav a:hover{
-  @apply underline;
-}
 
-a{
-  @apply cursor-pointer;
-}
-
-#github{
-  background-image: url(../imagens/githublogo.png);
-  @apply bg-white;
-}
-#linkedin{
-  background-image: url(../imagens/Inlogo.png);
-}
-
-.sombra{
-  text-shadow:rgba(0, 0, 0, 0.504) 2px 2px 2px;
-}
-
-.text-4xl{
-  font-size: 3.8rem;
-  line-height: 3.5rem;
+.ajustes{
+  padding-right: 15rem ;
+  width: 70rem;
 }
 
 #light{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  border: none;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: calc(100% - 2vh);
+  background-size: calc(140%);
   background-image: url(../imagens/dark-mode.svg);
+  margin-right: 0.4rem ;
 }

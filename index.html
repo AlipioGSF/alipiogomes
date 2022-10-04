@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="head">
+    <head id="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Alípio Gomes</title>
 </head>
-<body class="flex flex-col">
-    <main id="index">
-        <!--    CONTEÚDO AQUI   -->
-    </main>    
-    <section class="flex justify-center items-center w-screen h-32 bg-black text-white">
-            <div class="w-5/6">
-                <h1 class="text-3xl">Contatos</h1>
-                <div class="w-5/12 flex items-center justify-between">
-                    <a href="mailto:alipiotec@gmail.com" id="email" target="_blamk">alipioetec@gmail.com</a>
-                    <a href="https://github.com/AlipioGSF/" target="_blank"><div id="github" class="linksImg"></div></a>
-                    <a href="https://www.linkedin.com/in/alipio-gomes-sf/" target="_blank"><div id="linkedin" class="linksImg"></div></a>
+<body class="d-flex justify-content-center align-items-center">
+    <nav class="fixed-top navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="justify-content-center collapse navbar-collapse">
+                <div class="col-5 justify-content-between navbar-nav" ">
+                    <a class="nav-link " href="#">Início</a>
+                    <a class="nav-link" href="#">Sobre mim</a>
+                    <a class="nav-link" href="#">Projetos</a>
+                    <a class="nav-link" href="#">Habilidades</a>
                 </div>
             </div>
-    </section>
-    <nav id="navBar" class=" fixed flex w-screen h-14 bg-white items-center justify-center shadow-md">
-        <ul id="navegador" class="flex w-3/6 justify-around text-2xl font-extralight">
-            <li><a>Início</a></li> 
-            <li><a>Sobre mim</a></li>
-            <li><a>Projetos</a></li>
-            <li><a>Habilidades</a></li>
-        </ul>
-        
+        </div>
         <button id="light" class="fixed h-14 w-14 right-5 mt-1 rounded-full"></button>
-        <button id="menu"></button>
     </nav>
+    <main id="index">
+        <!--    CONTEÚDO AQUI   -->
+    </main> 
+    <footer class="fixed-bottom text-bg-dark p-2">
+        <div class="btn-group" role="group">
+            <a href="https://www.linkedin.com/in/alipio-gomes-sf/" target="_blank" class="btn btn-primary">Linkedin</a>
+            <a href="https://github.com/AlipioGSF/" target="_blank" class="btn btn-primary">Github</a>
+            <a  class="btn btn-primary">Email</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <script src="JS/indexjs.js"></script>
     <script src="JS/menu.js"></script>
 </body>

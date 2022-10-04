@@ -1,5 +1,6 @@
 const body = document.querySelector('body');
 const main = document.querySelector('main');
+const footer = document.querySelector('footer');
 const horario = new Date();
 let paginaAtual;
 let dark;
@@ -11,8 +12,9 @@ function controlpage(page){
     });
 }
 
-document.addEventListener('click', e =>{
+document.addEventListener('click', e => {
     const elemento = e.target;
+    if(elemento.tagName.toLowerCase() !== 'a' && elemento.tagName.toLowerCase() !== 'button') return;
     page = elemento.innerText.toLowerCase();
     if(page === 'início'){
         page = 'inicio';
@@ -23,16 +25,24 @@ document.addEventListener('click', e =>{
         require('../HTML/sobremim.html');
     } 
     if(page === 'projetos') require('../HTML/projetos.html');
-    if(page === 'habilidades') require('../HTML/skills.html');
+    if(page === 'habilidades') require('../HTML/habilidades.html');
+    if(page !== 'inicio' && page !== 'sobre mim') {
+        footer.style.display = 'none';
+    }else{
+        footer.style.display = 'fixed';
+    }
+    
     controlpage(page);
     
     if(elemento.getAttribute('id') === 'light'){
         if(!elemento.classList.contains('light')){
             elemento.classList.toggle('light');
            dark = '';
+           main.style.color = 'black';
         }else{
             elemento.classList.toggle('light');
             dark = 'dark';
+            main.style.color = 'white';
         }
     }
     body.style.backgroundImage = `url(../imagens/fundo${paginaAtual}${dark}.png)`
@@ -47,7 +57,7 @@ document.addEventListener('click', e =>{
             maisProjetos.style.display = 'none'
         }
     }
-})
+});
 
 document.addEventListener('mouseover', e => {
     const elemento = e.target;
@@ -78,10 +88,13 @@ function start(){
     if(hora >= 5 && hora <= 17){
         dark = ''
         body.style.backgroundImage = 'url(../imagens/fundoinicio.png)'
+        main.style.color = "black";
     }else{
         dark = 'dark'
         body.style.backgroundImage = 'url(../imagens/fundoiniciodark.png)'
+        main.style.color = "white";
     }
+    
 
 }
 
