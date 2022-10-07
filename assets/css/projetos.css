@@ -1,0 +1,48 @@
+/**/
+:root{
+    --proj1: ".projs div a div";
+    --proj2: ".projs div h5";
+}
+
+#projetos{
+    padding: 5em 0;
+}
+
+.projs div{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr 8fr;
+    grid-template-rows: auto;
+    margin: 2.5em 0;
+}
+
+.projs div{
+    margin-bottom: 2em;
+}
+.projs div a{
+    display: flex;
+    min-height: 45vh;
+    background-position: center;
+    background-size: 108%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    max-width: 320px;
+    max-height: 400px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.349);
+}
+.projs div h5{
+    flex-direction: column;
+    background-position: center;
+    background-size: 100%;
+    align-items: center;
+}
+
+.projs div:nth-child(2) a{
+    background-image: url(/assets/img/2.png);
+}
+.projs div:nth-child(1) a{
+    background-image: url(/assets/img/3.png);
+}
+.projs div:nth-child(3) a{
+    background-image: url(/assets/img/1.png);
+}

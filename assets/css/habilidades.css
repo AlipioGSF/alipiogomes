@@ -1,0 +1,37 @@
+#habilidades{
+    min-height: 80vh;
+}
+
+
+#habilidades tr td {
+    width: 7em;
+    height: 7em;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#habilidades tr:nth-child(1) td:nth-child(1){
+    background-image: url(../img/file-type-html.svg);
+}
+#habilidades tr:nth-child(1) td:nth-child(2){
+    background-image: url(../img/file-type-css.svg);
+}
+#habilidades tr:nth-child(1) td:nth-child(3){
+    background-image: url(../img/javascript.svg);
+}
+#habilidades tr:nth-child(2) td:nth-child(1){
+    background-image: url(../img/java.svg);
+    background-size: 92%;
+
+}
+#habilidades tr:nth-child(2) td:nth-child(2){
+    background-image: url(../img/git-icon.svg);
+    background-size: 92%;
+}
+#habilidades tr:nth-child(2) td:nth-child(3){
+    background-image: url(../img/mongodb-icon.svg);
+}
+#habilidades tr:nth-child(3) td:nth-child(1){
+    background-image: url(../img/bootstrap.svg);
+    background-size: 95%;
+}
