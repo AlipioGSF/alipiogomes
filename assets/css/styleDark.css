@@ -1,31 +1,62 @@
+@import 'sobremim.css';
+@import 'projetos.css';
+@import 'habilidades.css';
+@import 'footer.css';
+@import 'navbar.css';
+
 :root{
-    --fs-section: black;
-    --sd-section: ;
-    --fonts-color: ;
-}
-
-
-body{
-    color: rebeccapurple;
+    --main:#151C66 ;
+    --secondary: #2531B3;
+    --fonts-color: whitesmoke;
 }
 
 section{
-    background-color: var(--main);
     width: 100vw;
 }
+
+main{
+    margin: 2em 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: var(--fonts-color);
+}
+
 body:nth-child(2) section:nth-child(2){
     display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--fs-section);
+    background: var(--main);
 }
 body:nth-child(2) section:nth-child(2) img{
     max-height: 320px;
 }
-
-
-
 body:nth-child(2) section:nth-child(3){
-    width: 100px;
+    background: var(--secondary);
 }
+
+#inicio, #projetos{
+    background-color: var(--main);
+}
+#sobre-mim, #habilidades{
+    background-color: var(--secondary);
+}
+
+
+@media (max-width: 800px) {
+    #inicio{
+        text-align: center;
+    }
+    #inicio img{
+        display: none;
+    }
+    .projs div p{
+        display: none;
+    }
+}
+
