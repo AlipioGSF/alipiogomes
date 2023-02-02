@@ -35,3 +35,11 @@
     background-image: url(../img/bootstrap.svg);
     background-size: 95%;
 }
+#habilidades tr:nth-child(3) td:nth-child(2){
+    background-image: url(../img/nodejs-icon.svg);
+    background-size: 92%;
+}
+#habilidades tr:nth-child(3) td:nth-child(3){
+    background-image: url(../img/mysql.svg);
+    background-size: 92%;
+}
