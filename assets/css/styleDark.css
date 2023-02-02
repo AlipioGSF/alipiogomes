@@ -59,4 +59,8 @@ body:nth-child(2) section:nth-child(3){
         display: none;
     }
 }
-
+@media (max-width: 650px) {
+    .mangroveview{
+        display: none;
+    }
+}
