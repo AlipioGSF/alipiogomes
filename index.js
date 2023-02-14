@@ -15,7 +15,7 @@ mgview.addEventListener('click', ()=>{
     }
 });
 
-light.addEventListener('click',() => {
+light.addEventListener('click', () => {
     const href = css.href;
     const point = Number(String(href).lastIndexOf('/'));
     const address = `${String(href).slice(0,point+1)}`;
