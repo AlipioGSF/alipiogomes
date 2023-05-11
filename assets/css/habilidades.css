@@ -1,13 +1,14 @@
 #habilidades{
-    min-height: 80vh;
 }
 
-
+#habilidades table tr{
+    margin-bottom: 20rem;
+}
 #habilidades tr td {
     width: 7em;
     height: 7em;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 #habilidades tr:nth-child(1) td:nth-child(1){
@@ -20,30 +21,26 @@
     background-image: url(../img/javascript.svg);
 }
 #habilidades tr:nth-child(1) td:nth-child(4){
-    background-image: url(../img/java.svg);
-    background-size: 92%;
+    background-image: url(../img/file-type-reactjs.svg);
 }
-
 #habilidades tr:nth-child(2) td:nth-child(1){
-    background-image: url(../img/git-icon.svg);
-    background-size: 92%;
+    background-image: url(../img/java.svg);
 }
 #habilidades tr:nth-child(2) td:nth-child(2){
     background-image: url(../img/mysql.svg);
-    background-size: 92%;
 }
 #habilidades tr:nth-child(2) td:nth-child(3){
     background-image: url(../img/mongodb-icon.svg);
 }
 #habilidades tr:nth-child(2) td:nth-child(4){
     background-image: url(../img/nodejs-icon.svg);
-    background-size: 92%;
 }
 #habilidades tr:nth-child(3) td:nth-child(1){
     background-image: url(../img/bootstrap.svg);
-    background-size: 95%;
 }
 #habilidades tr:nth-child(3) td:nth-child(2){
     background-image: url(../img/figma.svg);
-    background-size: 95%;
+}
+#habilidades tr:nth-child(3) td:nth-child(3){
+    background-image: url(../img/git-icon.svg);
 }
