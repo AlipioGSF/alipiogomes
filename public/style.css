@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --laranja: #f26c4f;
+    --azul: #3a89c9;
+    --brancoGelo: #e9f2f9;
+    --azulClaro:  #9cc4e4;
+    --azulEscuro: #1b325f;
+}
+
+body{
+    width: 100vw;
+    /* background: var(--brancoGelo); */
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section, header{
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+}

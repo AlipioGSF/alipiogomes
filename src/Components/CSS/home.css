@@ -1,0 +1,61 @@
+#home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap:5rem;
+    justify-content: space-between;
+}
+
+#sbText h4:first-child{
+    width: fit-content;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--laranja);
+    text-align: center;
+    color: white;
+    font-size: calc(1rem * 1.5);
+
+}
+#sbText h1{
+    font-size: calc(1rem * 3.5) ;
+}
+#sbText h4{
+    font-size: calc(1rem * 1.8);
+    color: red;
+}
+
+
+#sbImg{
+    height: 40rem;
+    width: 40rem;
+    background-color: saddlebrown;
+}
+
+#redes{
+    display: flex;
+    position: fixed;
+    top: 50vh;
+    width: 60vh;
+    height: 5rem;
+    transform: rotate(90deg);
+    right: -12rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes span::after{
+    content: "━━━━━━━";
+}
+#redes button{
+    transform: rotate(-90deg);
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3rem;
+    margin: 0 1rem;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    cursor: pointer;
+}

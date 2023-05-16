@@ -1,0 +1,64 @@
+header{
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    justify-content: end;
+}
+
+header button{
+    width: 10rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+header nav{
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+header nav button{
+    color: var(--azulEscuro);
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+}
+
+
+header nav div button{
+    background-color: var(--laranja);
+    color: white;
+}
+
+header nav div a{
+    background: transparent;
+}
+.w3-dropdown-content{
+    background-color: transparent;
+}
+
+.dropdownItem {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0.5rem;
+    background-color: var(--azulEscuro);
+    text-align: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cvLocal{
+    position: absolute;
+}
+
+
+.iconCV{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-position: center;
+    background-size: contain;
+}
