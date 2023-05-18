@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from 'react';
-import { LocalContext } from '../context/localContext';
 import "./CSS/header.css";
 
 const navOptions = [
@@ -33,16 +32,15 @@ const navOptions = [
 ]
 
 const Header = () => {
-    const { setCurrentLocal } = useContext(LocalContext);
 
     return (
         <header>
             <nav>
-                {
+            {
                     navOptions.map((op) => (
                         op.label !== "Download CV" 
                             ?
-                                <button onClick={() => setCurrentLocal(op.label)}>{op.label}</button>
+                                <a href={`#${op.label.replace(" ","")}`}><button>{op.label}</button></a>
                             :
                                 <div className={'w3-dropdown-hover'}>
                                     <button>{op.label}</button>

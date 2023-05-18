@@ -1,8 +1,13 @@
 header{
+    width: 100vw;
     display: flex;
-    position: absolute;
-    top: 1rem;
-    justify-content: end;
+    position: fixed;
+    padding: 1rem 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.18);
 }
 
 header button{
@@ -14,6 +19,7 @@ header button{
 }
 
 header nav{
+    width: 80vw;
     display: flex;
     position: relative;
     gap: 1rem;
@@ -49,6 +55,11 @@ header nav div a{
     text-align: start;
     align-items: center;
     gap: 1rem;
+}
+
+
+.w3-dropdown-content a{
+    text-decoration: none;
 }
 
 .cvLocal{

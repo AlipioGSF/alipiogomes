@@ -1,22 +1,27 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import Header from "./Components/header";
-import { LocalContext } from "./context/localContext";
 import Home from "./Components/home";
 import Portfolio from "./Components/portfolio";
 
 function App() {
-  const {currentLocal} = useContext(LocalContext);
+  const [sp,setSp] = useState(0);
+  const[visible, setVisible] = useState(true);
+
+  window.addEventListener('scroll', ()=>{
+    sp>window.scrollY?setVisible(true):setVisible(false);
+    setSp(window.scrollY);
+  });
+
 
   return (
     <div className="App">
-      <Header/>
       {
-        currentLocal === "Sobre Mim"?
-          <Home/>
-        :currentLocal === "Portfólio"?
-          <Portfolio/>
+        visible?
+        <Header/>
         :null
       }
+          <Home/>
+          <Portfolio/>
       <div style={{height: '300vh'}}></div>
     </div>
   );

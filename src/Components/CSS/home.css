@@ -1,10 +1,20 @@
-#home{
+#SobreMim{
     min-height: 100vh;
     display: flex;
     align-items: center;
     gap:5rem;
     justify-content: space-between;
 }
+#sbText *{
+    margin: 0;
+}
+
+#sbText{
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+}
+
 
 #sbText h4:first-child{
     width: fit-content;
@@ -13,26 +23,30 @@
     text-align: center;
     color: white;
     font-size: calc(1rem * 1.5);
-
 }
+
 #sbText h1{
+    margin: 0;
     font-size: calc(1rem * 3.5) ;
 }
 #sbText h4{
-    font-size: calc(1rem * 1.8);
-    color: red;
+    font-size: calc(1rem * 1.5);
+}
+#sbText p{
+    margin-top: 1rem;
 }
 
 
+
 #sbImg{
-    height: 40rem;
-    width: 40rem;
+    height: 70vh;
+    width: 40vw;
     background-color: saddlebrown;
 }
 
 #redes{
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 50vh;
     width: 60vh;
     height: 5rem;
@@ -41,7 +55,6 @@
     align-items: center;
     justify-content: center;
 }
-
 #redes span::after{
     content: "━━━━━━━";
 }
