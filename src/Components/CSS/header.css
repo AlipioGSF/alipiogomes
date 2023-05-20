@@ -2,12 +2,22 @@ header{
     width: 100vw;
     display: flex;
     position: fixed;
-    padding: 1rem 0;
+    padding: 0.2rem 0;
     left: 0;
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
     border-bottom: 2px solid rgba(0, 0, 0, 0.18);
+    animation: down 0.5s linear;
+}
+
+@keyframes down {
+    from{
+        top: -1.5rem;
+    }
+    to{
+        top: 0;
+    }
 }
 
 header button{
@@ -24,6 +34,7 @@ header nav{
     position: relative;
     gap: 1rem;
     justify-content: flex-end;
+    align-items: center;
 }
 
 header nav button{
@@ -37,6 +48,7 @@ header nav button{
 header nav div button{
     background-color: var(--laranja);
     color: white;
+    padding: 0.6rem;
 }
 
 header nav div a{

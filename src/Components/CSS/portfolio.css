@@ -1,0 +1,23 @@
+#Portfólio{
+    min-height: 100vh;
+}
+
+#Portfólio p {
+    width: 30vw;
+}
+
+#Portfólio .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+    align-items: stretch;
+}
+
+#Portfólio a div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22vw;
+    height: 22vw;
+}

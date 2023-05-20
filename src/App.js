@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import Header from "./Components/header";
 import Home from "./Components/home";
 import Portfolio from "./Components/portfolio";
+import Expirience from "./Components/expirience";
 
 function App() {
   const [sp,setSp] = useState(0);
@@ -22,7 +23,7 @@ function App() {
       }
           <Home/>
           <Portfolio/>
-      <div style={{height: '300vh'}}></div>
+          <Expirience/>
     </div>
   );
 }

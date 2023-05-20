@@ -1,0 +1,30 @@
+.Exps{
+    display: flex;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.Exps .exp{
+    height: 10rem;
+}
+
+.Exps .exp h3{
+    font-size: 1.2rem;
+}
+
+.Exps .exp h4{
+    font-size: 1rem;
+}
+
+
+.Exps .exp:nth-child(odd){
+    position: relative;
+
+    border-bottom: 1px solid var(--laranja);
+}
+
+.Exps .exp:nth-child(even){
+    position: relative;
+    border-top: 1px solid var(--azulEscuro);
+    top: 9.94rem;
+}
