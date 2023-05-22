@@ -37,8 +37,8 @@ const projects = [
 const Portfolio = () => {
   return (
     <section id="Portfólio">
-      <h1>Portfólio</h1>
-      <p>Projetos de Websites, Design e Sistemas que fiz para aprimorar meu conhecimento e em trabalhos acadêmicos</p>
+      <h1 className="title">Portfólio</h1>
+      <p className="subTitle">Projetos de Websites, Design e Sistemas que fiz para aprimorar meu conhecimento e em trabalhos acadêmicos</p>
       <div class="projects">
         {projects.map((p) =>
           p.url ? (

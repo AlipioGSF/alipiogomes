@@ -4,12 +4,23 @@
     position: relative;
 }
 
+#Experiências {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Experiências .subTitle{
+    text-align: center;
+}
+
 .Exps .exp{
     height: 10rem;
 }
 
-.Exps .exp h3{
-    font-size: 1.2rem;
+.Exps .exp p{
+    font-weight: bold;
 }
 
 .Exps .exp h4{
@@ -19,12 +30,9 @@
 
 .Exps .exp:nth-child(odd){
     position: relative;
-
-    border-bottom: 1px solid var(--laranja);
 }
 
 .Exps .exp:nth-child(even){
     position: relative;
-    border-top: 1px solid var(--azulEscuro);
-    top: 9.94rem;
+    top: 9rem;
 }

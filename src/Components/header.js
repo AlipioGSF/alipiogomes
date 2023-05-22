@@ -9,6 +9,9 @@ const navOptions = [
     label: "Portfólio",
   },
   {
+    label: "Experiências",
+  },
+  {
     label: "Habilidades",
   },
   {
