@@ -4,12 +4,12 @@ import "./CSS/home.css";
 const socialMedia = [
   {
     title: "LinkedIn",
-    img: `${process.env.PUBLIC_URL}/icons/in.svg`,
+    img: `${process.env.PUBLIC_URL}/images/icons/in.svg`,
     url: "https://www.linkedin.com/in/alipio-gomes-sf/",
   },
   {
     title: "Github",
-    img: `${process.env.PUBLIC_URL}/icons/github.svg`,
+    img: `${process.env.PUBLIC_URL}/images/icons/github.svg`,
     url: "https://github.com/AlipioGSF",
   },
 ];
@@ -19,7 +19,7 @@ const Home = () => {
     <section id="SobreMim">
       <div id="sbText">
         <h4>Olá! Eu sou</h4>
-        <h1>Alípio Gomes</h1>
+        <h1 className="title">Alípio Gomes</h1>
         <h4>FullStack Developer</h4>
         <p>
           Estudante de Análise e Desenvolvimento de Sistemas, tenho 22 anos

@@ -23,12 +23,12 @@ const navOptions = [
       {
         label: "Download",
         url: `${process.env.PUBLIC_URL}/Files/AlipioGomes(pt-BR).pdf`,
-        img: `${process.env.PUBLIC_URL}/icons/br.svg`,
+        img: `${process.env.PUBLIC_URL}/images/icons/br.svg`,
       },
       {
         label: "Download",
         url: `${process.env.PUBLIC_URL}/Files/AlipioGomes(en).pdf`,
-        img: `${process.env.PUBLIC_URL}/icons/usa.svg`,
+        img: `${process.env.PUBLIC_URL}/images/icons/usa.svg`,
       },
     ],
   },

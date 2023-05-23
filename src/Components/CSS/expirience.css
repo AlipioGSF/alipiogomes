@@ -5,14 +5,18 @@
 }
 
 #Experiências {
+    padding: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 #Experiências .subTitle{
     text-align: center;
+}
+.Exps{
+    padding: 3rem 0;
+    height: 22rem;
 }
 
 .Exps .exp{

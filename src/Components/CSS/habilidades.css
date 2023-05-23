@@ -1,0 +1,63 @@
+#Habilidades{
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: start ;
+
+}
+
+.skills{
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.devHab{
+    background-color: black;
+    width: 50%;
+    height: max-content;
+    color: white;
+    padding: 1rem 2rem;
+    width: 50%;
+}
+
+.habsLocal{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.habImg{
+    height: 4rem;
+    width: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+.point{
+    width: 3rem;
+    height: 1rem;
+    border-radius: 5px;
+    background-color:orangered;
+}
+
+.unpoint{
+    background-color: white;
+}
+
+
+.stack{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.stack h4{
+    width: 8rem;
+}
