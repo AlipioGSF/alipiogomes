@@ -1,0 +1,42 @@
+#Experiências {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#Experiências .subTitle{
+    text-align: center;
+    max-width: 40rem;
+}
+
+
+.Exps{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.Exps .exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+    max-width: 18rem;
+    width: fit-content;
+    background-color: var(--azulEscuro);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    color: white
+}
+
+.Exps .exp p{
+    font-weight: bold;
+}
+.Exps .exp h4{
+    font-size: 1rem;
+}

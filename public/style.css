@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika';
+}
+
+:root{
+    --laranja: #f26c4f;
+    --azul: #3a89c9;
+    --brancoGelo: #e9f2f9;
+    --azulClaro:  #9cc4e4;
+    --azulEscuro: #1b325f;
+}
+
+body{
+    width: 100vw;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 60vw;
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    font-weight: bold;
+    font-family: 'Signika';
+}
+
+@media (max-width:992px) {
+    section{
+        width: 85vw;
+    }
+}
