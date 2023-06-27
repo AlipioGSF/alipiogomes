@@ -14,6 +14,8 @@ const socialMedia = [
   },
 ];
 
+const homeImg = `${process.env.PUBLIC_URL}/images/coding.gif`
+
 const Home = () => {
   return (
     <section id="SobreMim">
@@ -26,7 +28,6 @@ const Home = () => {
           e sou comunicativo, proativo, curioso e buscando sempre aprender
           coisas novas. Criatividade, liderança e trabalho em equipe são
           pontos fortes em mim.
-          <br />
           Ajudar as pessoas é algo que me faz sentir bem, por isso, pretendo em
           minha carreira participar de projetos que possam ser úteis e tenham
           impacto positivo para a sociedade.
@@ -43,7 +44,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div id="sbImg"></div>
+      <div id="sbImg" style={{backgroundImage: `url('${homeImg}')`}}></div>
     </section>
   );
 };

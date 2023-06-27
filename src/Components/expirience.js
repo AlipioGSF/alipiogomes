@@ -4,12 +4,12 @@ import "./CSS/expirience.css";
 const exp = [
   {
     title: "Graduação em Engenharia Mecânica",
-    duration: "08/19 - 06/21",
+    duration: "08/2019 - 06/2021",
     local: "UFPE",
   },
   {
     title: "Curso de Programação de Software",
-    duration: "12/21 - 04/22",
+    duration: "12/2021 - 04/2022",
     local: "ADM&TEC",
   },
   {

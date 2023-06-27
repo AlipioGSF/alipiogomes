@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Signika';
 }
 
 :root{
@@ -14,7 +17,6 @@
 
 body{
     width: 100vw;
-    /* background: var(--brancoGelo); */
     background: whitesmoke;
     display: flex;
     align-items: center;
@@ -22,15 +24,18 @@ body{
 }
 
 section{
-    width: 70vw;
+    width: 60vw;
     padding: 0;
     margin: 0;
 }
 
 .title{
     font-weight: bold;
+    font-family: 'Signika';
 }
 
-.subTitle{
-    max-width: 40rem;
+@media (max-width:992px) {
+    section{
+        width: 85vw;
+    }
 }

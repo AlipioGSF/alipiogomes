@@ -1,74 +1,85 @@
-#SobreMim{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    gap:5rem;
-    justify-content: space-between;
+#SobreMim {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-between;
 }
-#sbText *{
-    margin: 0;
-}
-
-#sbText{
-    display: flex;
-    flex-direction: column;
-    width: 38vw;
+#sbText * {
+  margin: 0;
 }
 
-
-#sbText h4:first-child{
-    width: fit-content;
-    padding: 0.5rem 0.8rem;
-    background-color: var(--laranja);
-    text-align: center;
-    color: white;
-    font-size: calc(1rem * 1.5);
+#sbText {
+  display: flex;
+  flex-direction: column;
+  width: 38vw;
 }
 
-#sbText h1{
-    margin: 0;
-    font-size: calc(1rem * 3.5) ;
-}
-#sbText h4{
-    font-size: calc(1rem * 1.5);
-}
-#sbText p{
-    margin-top: 1rem;
+#sbText h4:first-child {
+  width: fit-content;
+  padding: 0.5rem 0.8rem;
+  background-color: var(--azulEscuro);
+  text-align: center;
+  color: white;
+  font-size: calc(1rem * 1.5);
 }
 
-
-
-#sbImg{
-    height: 70vh;
-    width: 40vw;
-    background-color: saddlebrown;
+#sbText h1 {
+  margin: 0;
+  font-size: calc(1rem * 3.5);
+}
+#sbText h4 {
+  font-size: calc(1rem * 1.5);
+}
+#sbText p {
+  margin-top: 1rem;
+  text-align: justify;
 }
 
-#redes{
-    display: flex;
-    position: absolute;
-    top: 50vh;
-    width: 60vh;
-    height: 5rem;
-    transform: rotate(90deg);
-    right: -12rem;
-    align-items: center;
-    justify-content: center;
+#sbImg {
+  height: 70vh;
+  width: 40vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#redes span::after{
-    content: "━━━━━━━";
+
+#redes {
+  display: flex;
+  top: 50vh;
+  width: max-content;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--azulEscuro);
 }
-#redes button{
-    transform: rotate(-90deg);
-    width: 2rem;
-    height: 2rem;
-    padding: 0.3rem;
-    margin: 0 1rem;
-    border-radius: 100px;
-    border: none;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    cursor: pointer;
+#redes span::after {
+  content: "━━━━━━━";
+}
+#redes button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.3rem;
+  margin: 0 1rem;
+  border-radius: 100px;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  #SobreMim {
+  }
+  #redes span::after {
+    content: none;
+  }
+  #sbText {
+    width: 100%;
+}
+  #sbImg {
+    display: none;
+  }
 }

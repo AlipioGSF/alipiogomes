@@ -85,3 +85,42 @@ header nav div a{
     background-position: center;
     background-size: contain;
 }
+
+#mobileNav{
+ background-color: whitesmoke;
+ flex-direction: column;
+ align-items: start;
+ justify-content: space-around;
+ padding: 1rem;
+ height: max-content;
+ right: 00;
+}
+
+#mobileNav a button{
+    background-color: transparent;
+    color: black;
+}
+
+#mobileNav .dropdownItem{
+    background-color: var(--azulEscuro);
+    color: white;
+}
+
+
+@media (max-width: 992px) {
+    header{
+        animation: none;
+        top: 0;
+        padding: 0;
+    }
+    header nav{
+        width: 98%;
+    }
+    #menuMobile{
+        height: 3.2rem;
+        width: 3.2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+}
