@@ -25,7 +25,7 @@ const Home = () => {
         <h4>FullStack Developer</h4>
         <p>
           Estudante de Análise e Desenvolvimento de Sistemas, tenho 22 anos
-          e sou comunicativo, proativo, curioso e buscando sempre aprender
+          e sou comunicativo, proativo, curioso e busco sempre aprender
           coisas novas. Criatividade, liderança e trabalho em equipe são
           pontos fortes em mim.
           Ajudar as pessoas é algo que me faz sentir bem, por isso, pretendo em
