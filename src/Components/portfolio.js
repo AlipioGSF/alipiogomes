@@ -39,7 +39,7 @@ const Portfolio = () => {
     <section id="Portfólio">
       <h1 className="title">Portfólio</h1>
       <p className="subTitle">
-        Projetos e trabalhos acadêmicos que criei para aprimorara meu conhecimento em websites, design e sistemas.
+        Projetos e trabalhos acadêmicos que criei para aprimorar meu conhecimento em websites, design e sistemas.
       </p>
       <div class="projects">
         {projects.map((p) =>
